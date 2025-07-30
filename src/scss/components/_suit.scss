@@ -1,0 +1,57 @@
+.suit {
+  padding-bottom: 14rem;
+  position: relative;
+  background-image: url("./../img/suit-bg.webp");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+
+    top: 0;
+    height: 100%;
+    width: 38rem;
+  }
+
+  &::before {
+    left: 0;
+    background: linear-gradient(to right, #000 0%, rgba(0, 0, 0, 0) 100%);
+  }
+  &::after {
+    right: 0;
+    background: linear-gradient(to left, #000 0%, rgba(0, 0, 0, 0) 100%);
+  }
+  &__container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10rem;
+    position: relative;
+    z-index: 4;
+  }
+
+  &__content {
+    width: 100%;
+    max-width: 72.4rem;
+  }
+
+  &__img {
+    height: 80rem;
+    width: 78.3rem;
+  }
+  &__title {
+    margin-bottom: 4.5rem;
+  }
+  &__desc {
+    p {
+      margin: 0;
+
+      &:not(:last-child) {
+        margin-bottom: 4.5rem;
+      }
+    }
+  }
+}

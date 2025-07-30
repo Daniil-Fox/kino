@@ -1,0 +1,42 @@
+.get {
+  padding: 10.7rem 0 13rem;
+  &__title {
+    margin-bottom: 9rem;
+  }
+  &__slider {
+    padding: 0 calc((100% - var(--content-width)) / 2);
+    .swiper-slide {
+      width: auto;
+    }
+  }
+}
+
+.get-item {
+  position: relative;
+
+  min-height: 65.7rem;
+  width: 51.2rem;
+  padding: 5.5rem 6rem;
+  &__img {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+
+    img {
+      display: block;
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  &__title {
+    position: relative;
+    z-index: 4;
+    margin: 0;
+    font-weight: 500;
+    font-size: 4rem;
+    line-height: 100%;
+  }
+}

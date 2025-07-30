@@ -1,0 +1,35 @@
+// Roboto Font Family
+@include font-face("Roboto", "Roboto-ExtraLight", 200, normal);
+@include font-face("Roboto", "Roboto-Light", 300, normal);
+@include font-face("Roboto", "Roboto-Regular", 400, normal);
+@include font-face("Roboto", "Roboto-Medium", 500, normal);
+@include font-face("Roboto", "Roboto-SemiBold", 600, normal);
+@include font-face("Roboto", "Roboto-Bold", 700, normal);
+
+// Roboto Slab Font Family
+@include font-face("Roboto Slab", "RobotoSlab-SemiBold", 600, normal);
+@include font-face("Roboto Slab", "RobotoSlab-Bold", 700, normal);
+
+// Geist Font Family
+@include font-face("Geist", "Geist-SemiBold", 600, normal);
+
+// Geologica Font Family
+@include font-face("Geologica", "Geologica-ExtraLight", 200, normal);
+@include font-face("Geologica", "Geologica-Light", 300, normal);
+
+// Wix Madefor Display Font Family
+@include font-face(
+  "Wix Madefor Display",
+  "WixMadeforDisplay-Medium",
+  500,
+  normal
+);
+@include font-face(
+  "Wix Madefor Display",
+  "WixMadeforDisplay-SemiBold",
+  600,
+  normal
+);
+
+// Wix Madefor Text Font Family
+@include font-face("Wix Madefor Text", "WixMadeforText-Medium", 500, normal);

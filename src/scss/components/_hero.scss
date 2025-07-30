@@ -1,0 +1,84 @@
+.hero {
+  height: 100vh;
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 23.5rem;
+    background: linear-gradient(to top, #000 0%, rgba(0, 0, 0, 0) 100%);
+  }
+  &__wrapper {
+    position: relative;
+    height: 100%;
+    max-width: 192rem;
+    margin: 0 auto;
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 2;
+      width: 100rem;
+      height: 100%;
+      background: linear-gradient(to right, #000 55.28%, rgba(0, 0, 0, 0) 100%);
+    }
+  }
+  .container {
+    width: 100%;
+    height: 100%;
+  }
+  &__container {
+    height: 100%;
+    padding-top: 17.7vh;
+  }
+
+  &__img {
+    position: absolute;
+    top: 0;
+    right: -32rem;
+    height: 100%;
+    width: 202rem;
+    &::after {
+      content: "";
+      position: absolute;
+      right: 0;
+      top: 0;
+      height: 100%;
+      width: 23rem;
+      background: linear-gradient(to left, #000 0%, rgba(0, 0, 0, 0) 100%);
+    }
+    img {
+      display: block;
+      width: 100%;
+      height: 100%;
+    }
+  }
+  &__content {
+    position: relative;
+    z-index: 5;
+    width: 100%;
+    max-width: 57.3rem;
+  }
+  &__title {
+    margin-bottom: 4.2rem;
+  }
+  &__desc {
+    margin-bottom: 7.1rem;
+    p {
+      margin: 0;
+
+      &:not(:last-child) {
+        margin-bottom: 1rem;
+      }
+    }
+  }
+
+  &__btn {
+    display: flex;
+    width: 100%;
+  }
+}

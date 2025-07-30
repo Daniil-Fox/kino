@@ -1,0 +1,22 @@
+:root {
+  --font-family: "Roboto", sans-serif;
+  --second-family: "Roboto Slab", sans-serif;
+  --third-family: "Geist", sans-serif;
+  --font3: "Wix Madefor Display", sans-serif;
+  --font4: "Geologica", sans-serif;
+  --font5: "Wix Madefor Text", sans-serif;
+  --content-width: 180rem;
+  --container-offset: 2rem;
+  --container-width: calc(var(--content-width) + (var(--container-offset) * 2));
+
+  --bb-green: #1a543e;
+  --bb-yelow: #fabf1c;
+  --bb-black: #040404;
+  --bb-white: #fff;
+  --30black: #fff;
+  --grey1: #fff;
+  --grey2: #fff;
+  --grey3: #fff;
+  --grey4: #fff;
+  --bb-yelow: #fabf1c;
+}

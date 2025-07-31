@@ -20,6 +20,10 @@
       overflow: auto hidden;
       gap: 3rem;
       scrollbar-width: none;
+      @include mobile {
+        padding: 0 var(--container-offset);
+        margin: 0 calc(-1 * var(--container-offset));
+      }
     }
   }
   &__item {

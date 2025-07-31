@@ -1302,6 +1302,12 @@ section:first-child {
   gap: 3rem;
   scrollbar-width: none;
 }
+@media (max-width: 576px) {
+  .testi__slider .swiper-wrapper {
+    padding: 0 var(--container-offset);
+    margin: 0 calc(-1 * var(--container-offset));
+  }
+}
 .testi__item {
   width: 32.9rem;
   height: 65rem;
@@ -1642,6 +1648,7 @@ section:first-child {
   z-index: 100;
   opacity: 0;
   pointer-events: none;
+  padding: var(--container-offset);
   backdrop-filter: blur(10px);
   background: rgba(0, 0, 0, 0.5);
   display: -webkit-box;
@@ -1667,6 +1674,14 @@ section:first-child {
   -ms-flex-pack: justify;
   justify-content: space-between;
   margin-bottom: 6rem;
+  gap: 3rem;
+}
+@media (max-width: 576px) {
+  .modal__header {
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+  }
 }
 .modal__title {
   margin: 0;

@@ -224,7 +224,21 @@ section {
   line-height: 120%;
   color: var(--bb-white);
   transition: color 0.3s ease-in;
+  &:hover {
+    color: #fbd260;
+  }
+  &:focus {
+    outline: none;
+    color: #fbd260;
+  }
+  &:active {
+    color: var(--bb-yelow);
+  }
 
+  &:disabled {
+    color: #e6e6e6;
+    cursor: not-allowed;
+  }
   @include mobile {
     font-size: 2rem;
   }

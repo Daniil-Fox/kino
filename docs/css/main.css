@@ -504,6 +504,20 @@ section:first-child {
   -webkit-transition: color 0.3s ease-in;
   transition: color 0.3s ease-in;
 }
+.link-btn:hover {
+  color: #fbd260;
+}
+.link-btn:focus {
+  outline: none;
+  color: #fbd260;
+}
+.link-btn:active {
+  color: var(--bb-yelow);
+}
+.link-btn:disabled {
+  color: #e6e6e6;
+  cursor: not-allowed;
+}
 @media (max-width: 576px) {
   .link-btn {
     font-size: 2rem;

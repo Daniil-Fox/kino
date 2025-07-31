@@ -1,12 +1,22 @@
 .get {
   padding: 10.7rem 0 13rem;
+  @include mobile {
+    padding: 11rem 0 14rem;
+  }
   &__title {
     margin-bottom: 9rem;
+    @include mobile {
+      margin-bottom: 5.2rem;
+    }
   }
   &__slider {
     padding: 0 calc((100% - var(--content-width)) / 2);
     .swiper-slide {
       width: auto;
+    }
+
+    @include mobile {
+      padding: 0 var(--container-offset);
     }
   }
 }
@@ -17,6 +27,12 @@
   min-height: 65.7rem;
   width: 51.2rem;
   padding: 5.5rem 6rem;
+
+  @include mobile {
+    width: 42.5rem;
+    min-height: 80rem;
+    padding: 3.6rem 4rem;
+  }
   &__img {
     position: absolute;
     left: 0;
@@ -38,5 +54,9 @@
     font-weight: 500;
     font-size: 4rem;
     line-height: 100%;
+
+    @include mobile {
+      font-size: 3.4rem;
+    }
   }
 }

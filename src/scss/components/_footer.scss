@@ -1,0 +1,48 @@
+.footer {
+  padding: 6rem 0;
+  @include mobile {
+    padding: 7rem 0;
+  }
+  &__logo {
+    display: block;
+    width: 22.1rem;
+    height: auto;
+    @include mobile {
+      width: 14.7rem;
+    }
+    img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+  }
+  &__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    @include mobile {
+      align-items: stretch;
+    }
+  }
+
+  &__block {
+    text-align: right;
+    @include mobile {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      justify-content: space-between;
+    }
+    & > div {
+      &:not(:last-child) {
+        margin-bottom: 2.3rem;
+
+        @include mobile {
+          margin: 0;
+        }
+      }
+    }
+  }
+}

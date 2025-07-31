@@ -5,7 +5,10 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-
+  @include mobile {
+    padding-top: 13rem;
+    padding-bottom: 8rem;
+  }
   &::before,
   &::after {
     content: "";
@@ -14,6 +17,9 @@
     top: 0;
     height: 100%;
     width: 38rem;
+    @include mobile {
+      display: none;
+    }
   }
 
   &::before {
@@ -31,6 +37,11 @@
     gap: 10rem;
     position: relative;
     z-index: 4;
+
+    @include mobile {
+      flex-direction: column;
+      gap: 5rem;
+    }
   }
 
   &__content {
@@ -41,9 +52,23 @@
   &__img {
     height: 80rem;
     width: 78.3rem;
+
+    @include mobile {
+      width: 100%;
+      height: 50.7rem;
+    }
+
+    img {
+      display: block;
+      width: 100%;
+      height: 100%;
+    }
   }
   &__title {
     margin-bottom: 4.5rem;
+    @include mobile {
+      margin-bottom: 2.3rem;
+    }
   }
   &__desc {
     p {
@@ -51,6 +76,10 @@
 
       &:not(:last-child) {
         margin-bottom: 4.5rem;
+
+        @include mobile {
+          margin-bottom: 0;
+        }
       }
     }
   }

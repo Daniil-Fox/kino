@@ -1,0 +1,69 @@
+<div class="modal" id="modal-cta">
+  <div class="modal__body">
+
+    <div class="modal__header">
+      <p class="modal__title">
+        Оставьте заявку, я с&nbsp;вами свяжусь
+      </p>
+
+      <button class="btn-reset modal__close">
+        <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M1 1L29 29M29 1L1 29" stroke="#040404" stroke-width="2" />
+        </svg>
+      </button>
+    </div>
+
+    <form action="#" class="modal__form form corner-smooth-40">
+      <div class="form__field form__field--long">
+        <div class="form__field-wrapper">
+          <input id="name" type="text" class="form__input input-name" name="Имя" />
+          <label for="name" class="form__label">как ваше имя?</label>
+        </div>
+      </div>
+      <div class="form__field form__field--long">
+        <select name="тариф" class="visually-hidden select-contact">
+          <option value="">Выберите опцию</option>
+          <option value="Просто посмотреть">Просто посмотреть</option>
+          <option value="С поддержкой">С поддержкой</option>
+          <option value="VIP-формат">VIP-формат
+          </option>
+        </select>
+        <div class="dropdown form__dropdown ">
+          <div class="dropdown__header">
+            <div class="dropdown__label">Выберете тариф</div>
+            <div class="dropdown__capture">Выберете тариф</div>
+            <div class="dropdown__btn">
+              <svg class="">
+                <use xlink:href="img/sprite.svg#arr-down"></use>
+              </svg>
+            </div>
+          </div>
+          <div class="dropdown__body">
+            <div class="dropdown__content">
+              <div class="dropdown__item"></div>
+              <div class="dropdown__item">Просто посмотреть</div>
+              <div class="dropdown__item">С поддержкой</div>
+              <div class="dropdown__item">VIP-формат
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="form__field form__field--long">
+        <div class="form__field-wrapper">
+          <input id="tel" type="tel" class="form__input input-tel" name="Телефон" />
+          <label for="tel" class="form__label">Номер телефона</label>
+        </div>
+      </div>
+      <div class="form__field form__field--long">
+        <div class="form__field-wrapper form__field-wrapper--area">
+          <textarea id="mess" class="form__input form__input--area input-mess" name="Сообщение"></textarea>
+          <label for="mess" class="form__label">введите текст сообщения</label>
+        </div>
+      </div>
+      <button class="btn btn-reset btn--accent form__btn" type="submit">
+        Отправить
+      </button>
+    </form>
+  </div>
+</div>

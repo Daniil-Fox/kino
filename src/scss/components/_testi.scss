@@ -1,0 +1,68 @@
+.testi {
+  padding-top: 12rem;
+
+  &__title {
+    margin-bottom: 9rem;
+    @include mobile {
+      margin-bottom: 5rem;
+    }
+  }
+  &__slider {
+    padding: 0 calc((100% - var(--content-width)) / 2);
+    @include mobile {
+      padding: 0 var(--container-offset);
+    }
+    .swiper-slide {
+      width: auto;
+    }
+
+    .swiper-wrapper {
+      overflow: auto hidden;
+      gap: 3rem;
+      scrollbar-width: none;
+    }
+  }
+  &__item {
+    width: 32.9rem;
+    height: 65rem;
+    cursor: zoom-in;
+    @include mobile {
+      width: 48rem;
+      height: 90rem;
+    }
+    img,
+    video {
+      display: block;
+      width: 100%;
+      height: 100%;
+    }
+
+    &--video {
+      position: relative;
+      &::before {
+        content: "";
+        position: absolute;
+        z-index: 2;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.1);
+      }
+      &::after {
+        content: "";
+        position: absolute;
+        z-index: 4;
+        width: 7.1rem;
+        aspect-ratio: 1 / 1;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        background-image: url("./../img/svg/play.svg");
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+      }
+    }
+  }
+}

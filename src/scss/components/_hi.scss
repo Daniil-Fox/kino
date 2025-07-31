@@ -1,0 +1,65 @@
+.hi {
+  @include mobile {
+    padding-top: 9.4rem;
+    padding-bottom: 7rem;
+  }
+  &__container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6rem;
+
+    @include mobile {
+      flex-direction: column;
+      gap: 5rem;
+    }
+  }
+
+  &__content {
+    width: 100%;
+    max-width: 65.1rem;
+    text-align: center;
+    margin-top: -1rem;
+  }
+
+  &__title {
+    font-size: 9rem;
+    margin-bottom: 3.5rem;
+
+    @include mobile {
+      font-size: 5rem;
+      margin-bottom: 2.5rem;
+    }
+  }
+
+  &__desc {
+    p {
+      margin: 0;
+      &:not(:last-child) {
+        margin-bottom: 1rem;
+      }
+    }
+  }
+
+  &__img {
+    width: 80rem;
+    flex-grow: 0;
+    min-height: 80rem;
+    position: relative;
+
+    @include mobile {
+      width: 100%;
+      min-height: 62rem;
+    }
+
+    img,
+    video {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+}

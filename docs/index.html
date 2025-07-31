@@ -64,12 +64,16 @@
               Курс от&nbsp;Паши, снятый как&nbsp;мини-фильм, а&nbsp;не&nbsp;как&nbsp;лекция за&nbsp;столом.
             </p>
           </div>
-          <button class="btn btn-reset modal-btn hero__btn">
+          <button class="btn btn-reset modal-btn hero__btn" data-target="#modal-cta">
             Начать обучение
           </button>
         </div>
         <div class="hero__img">
-          <img src="./img/hero.webp" alt="Снимать вовсе не тяжко">
+          <picture>
+            <source srcset="./img/hero-mob.webp" media="(max-width: 576px)" type="image/webp">
+            <img src="./img/hero.webp" alt="Снимать вовсе не тяжко">
+          </picture>
+
         </div>
       </div>
     </div>
@@ -85,7 +89,7 @@
         </h2>
         <div class="suit__desc desc2">
           <p>
-            Если&nbsp;ты&nbsp;только начинаешь <br>и&nbsp;не&nbsp;знаешь, с&nbsp;чего&nbsp;начать&nbsp;— этот&nbsp;курс
+            Если&nbsp;ты&nbsp;только начинаешь и&nbsp;не&nbsp;знаешь, с&nbsp;чего&nbsp;начать&nbsp;— этот&nbsp;курс
             для&nbsp;тебя.<br>
             Если&nbsp;ты&nbsp;уже&nbsp;снимаешь, но&nbsp;не&nbsp;видишь роста, нет&nbsp;стиля, и&nbsp;не&nbsp;понимаешь,
             куда двигаться&nbsp;— тоже&nbsp;сюда.
@@ -117,7 +121,10 @@
             Где&nbsp;брать идеи и&nbsp;как&nbsp;набирать просмотры
           </p>
           <div class="get-item__img">
-            <img src="./img/get/01.webp" alt="">
+            <picture>
+              <source srcset="./img/get/01-mob.webp" media="(max-width: 576px)" type="image/webp">
+              <img src="./img/get/01.webp" alt="">
+            </picture>
           </div>
         </div>
       </div>
@@ -128,7 +135,10 @@
 
           </p>
           <div class="get-item__img">
-            <img src="./img/get/02.webp" alt="">
+            <picture>
+              <source srcset="./img/get/02-mob.webp" media="(max-width: 576px)" type="image/webp">
+              <img src="./img/get/02.webp" alt="">
+            </picture>
           </div>
         </div>
       </div>
@@ -139,7 +149,10 @@
 
           </p>
           <div class="get-item__img">
-            <img src="./img/get/03.webp" alt="">
+            <picture>
+              <source srcset="./img/get/03-mob.webp" media="(max-width: 576px)" type="image/webp">
+              <img src="./img/get/03.webp" alt="">
+            </picture>
           </div>
         </div>
       </div>
@@ -149,7 +162,10 @@
             Как&nbsp;выстраивать выразительные, красивые кадры
           </p>
           <div class="get-item__img">
-            <img src="./img/get/04.webp" alt="">
+            <picture>
+              <source srcset="./img/get/04-mob.webp" media="(max-width: 576px)" type="image/webp">
+              <img src="./img/get/04.webp" alt="">
+            </picture>
           </div>
         </div>
       </div>
@@ -160,7 +176,10 @@
             видео
           </p>
           <div class="get-item__img">
-            <img src="./img/get/05.webp" alt="">
+            <picture>
+              <source srcset="./img/get/05-mob.webp" media="(max-width: 576px)" type="image/webp">
+              <img src="./img/get/05.webp" alt="">
+            </picture>
           </div>
         </div>
       </div>
@@ -168,9 +187,356 @@
   </div>
 </section>
 
+      <section class="program">
+  <div class="container">
+    <div class="program__container">
+      <div class="program__content">
+        <h2 class="title3 program__title">
+          Программа курса
+          <span><span class="accent">40+</span> уроков</span>
+        </h2>
+        <ul class="list-reset program__list list desc3">
+          <li><i><img src="./img/icons/camera2.webp" alt=""></i> Как пользоваться камерой: экспозиция, фокус, кадр</li>
+          <li><i><img src="./img/icons/triangle.webp" alt=""></i> Композиция и визуальный стиль</li>
+          <li><i><img src="./img/icons/hand.webp" alt=""></i> Сценарий и структура коротких роликов</li>
+          <li><i><img src="./img/icons/brain.webp" alt=""></i> Где брать идеи и темы</li>
+          <li><i><img src="./img/icons/board.webp" alt=""></i> Съёмка и монтаж — мои авторские приёмы</li>
+          <li><i><img src="./img/icons/chart.webp" alt=""></i> Продвижение и удержание внимания</li>
+          <li><i><img src="./img/icons/people.webp" alt=""></i> Работа с&nbsp;актёрами, атмосферой и смыслом</li>
+        </ul>
+        <p class="program__under desc3">
+          Каждый урок&nbsp;— это&nbsp;не&nbsp;просто «говорящая голова», а&nbsp;мини-фильм. Обучение не&nbsp;только
+          полезное, но&nbsp;и&nbsp;вдохновляющее.
+        </p>
+      </div>
+
+      <div class="program__video video-wrapper">
+        <button class="btn-reset video-play">
+          <svg class="video-btn__icon">
+            <use xlink:href="img/sprite.svg#play"></use>
+          </svg>
+        </button>
+        <video src="./cover.mp4" poster="./img/poster.webp"></video>
+      </div>
+    </div>
+  </div>
+</section>
+
+      <section class="how">
+  <div class="container">
+    <div class="how__container">
+      <div class="how__img">
+        <img src="./img/how.webp" aria-hidden="true" alt="">
+      </div>
+      <div class="how__content">
+        <h2 class="how__title title3">
+          <span>Как</span>
+          проходит обучение
+        </h2>
+        <ul class="list-reset list how__list">
+          <li><i><img src="./img/icons/camera.webp" alt=""></i> Видеоуроки в&nbsp;стиле мини-фильмов</li>
+          <li><i><img src="./img/icons/calendar.webp" alt=""></i> Еженедельные эфиры с&nbsp;разбором и&nbsp;ответами
+          </li>
+          <li><i><img src="./img/icons/micro.webp" alt=""></i> Приглашённые гости</li>
+          <li><i><img src="./img/icons/chat.webp" alt=""></i> Чат&nbsp;для&nbsp;общения и&nbsp;обратной связи</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+      <section class="format">
+  <div class="container">
+    <h2 class="title3 format__title">Выбери свой&nbsp;формат
+    </h2>
+  </div>
+  <div class="format__slider">
+    <div class="format__viewport">
+      <div class="format__item f-item f-item--light">
+        <div class="f-item__content">
+          <p class="f-item__title">Просто посмотреть
+          </p>
+          <ul class="f-item__list list-reset">
+            <li>Доступ ко всем урокам</li>
+          </ul>
+          <ul class="f-item__list list-reset">
+            <li class="disabled">Общение со&nbsp;мной в чате</li>
+            <li class="disabled">Еженедельные эфиры</li>
+            <li class="disabled">Разбор работ</li>
+            <li class="disabled">Приглашенные гости</li>
+          </ul>
+          <ul class="f-item__list list-reset">
+            <li class="disabled">Моя полная вовлеченность</li>
+            <li class="disabled">Можно написать, позвонить или выйти на видеозвонок</li>
+            <li class="disabled">Помощь на каждом шаге лично от меня</li>
+          </ul>
+        </div>
+        <div class="f-item__img">
+          <picture>
+            <source srcset="./img/format/01-mob.webp" media="(max-width: 576px)" type="image/webp">
+            <img src="./img/format/01.webp" aria-hidden="true" alt="">
+          </picture>
+        </div>
+      </div>
+      <div class="format__item f-item f-item--green">
+        <div class="f-item__content">
+          <p class="f-item__title">С поддержкой
+
+          </p>
+          <ul class="f-item__list list-reset">
+            <li>Доступ ко всем урокам</li>
+          </ul>
+          <ul class="f-item__list list-reset">
+            <li>Общение со&nbsp;мной в чате</li>
+            <li>Еженедельные эфиры</li>
+            <li>Разбор работ</li>
+            <li>Приглашенные гости</li>
+          </ul>
+          <ul class="f-item__list list-reset">
+            <li class="disabled">Моя полная вовлеченность</li>
+            <li class="disabled">Можно написать, позвонить или выйти на видеозвонок</li>
+            <li class="disabled">Помощь на каждом шаге лично от меня</li>
+          </ul>
+        </div>
+        <div class="f-item__img">
+          <picture>
+            <source srcset="./img/format/02-mob.webp" media="(max-width: 576px)" type="image/webp">
+            <img src="./img/format/02.webp" aria-hidden="true" alt="">
+          </picture>
+        </div>
+      </div>
+      <div class="format__item f-item f-item--yellow">
+        <div class="f-item__content">
+          <p class="f-item__title">VIP-формат
+          </p>
+          <ul class="f-item__list list-reset">
+            <li>Доступ ко всем урокам</li>
+          </ul>
+          <ul class="f-item__list list-reset">
+            <li>Общение со&nbsp;мной в чате</li>
+            <li>Еженедельные эфиры</li>
+            <li>Разбор работ</li>
+            <li>Приглашенные гости</li>
+          </ul>
+          <ul class="f-item__list list-reset">
+            <li>Моя полная вовлеченность</li>
+            <li>Можно написать, позвонить или выйти на видеозвонок</li>
+            <li>Помощь на каждом шаге лично от меня</li>
+          </ul>
+        </div>
+        <div class="f-item__img">
+          <picture>
+            <source srcset="./img/format/03-mob.webp" media="(max-width: 576px)" type="image/webp">
+            <img src="./img/format/03.webp" aria-hidden="true" alt="">
+          </picture>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+      <section class="hi">
+  <div class="container">
+    <div class="hi__container">
+      <div class="hi__content">
+        <h3 class="title3 title3--accent hi__title">
+          Привет, я&nbsp;Паша
+        </h3>
+        <div class="desc2 hi__desc">
+          <p>Я&nbsp;снимаю короткие ролики, которые выглядят как&nbsp;сцены из&nbsp;кино. Без&nbsp;команды,
+            без&nbsp;студии&nbsp;—
+            просто с&nbsp;идеей, стилем и&nbsp;опытом.</p>
+          <p>Мой&nbsp;курс&nbsp;— не&nbsp;про&nbsp;правила.
+            Он&nbsp;про&nbsp;то, как&nbsp;делать сильно, интересно
+            и&nbsp;визуально.</p>
+          <p>Я&nbsp;не&nbsp;просто учу&nbsp;— я&nbsp;показываю.</p>
+          <p>И&nbsp;если&nbsp;ты&nbsp;хочешь так&nbsp;же&nbsp;— добро пожаловать.</p>
+        </div>
+      </div>
+
+      <div class="hi__img video-wrapper">
+        <video src="" poster="./img/hi.webp"></video>
+      </div>
+    </div>
+  </div>
+</section>
+
+      <section class="testi">
+  <div class="container">
+    <h2 class="title3 testi__title">Отзывы</h2>
+  </div>
+
+  <div class="testi__slider swiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide" data-fancybox="gallery" data-src="./img/testi/01.webp">
+        <div class="testi__item">
+          <img src="./img/testi/01.webp" alt="">
+        </div>
+      </div>
+      <div class="swiper-slide" data-fancybox="gallery" data-src="./cover.mp4">
+        <div class="testi__item testi__item--video">
+          <img src="./img/testi/02.webp" alt="">
+        </div>
+      </div>
+      <div class="swiper-slide" data-fancybox="gallery" data-src="./img/testi/01.webp">
+        <div class="testi__item">
+          <img src="./img/testi/01.webp" alt="">
+        </div>
+      </div>
+      <div class="swiper-slide" data-fancybox="gallery" data-src="./cover.mp4">
+        <div class="testi__item testi__item--video">
+          <img src="./img/testi/03.webp" alt="">
+        </div>
+      </div>
+      <div class="swiper-slide" data-fancybox="gallery" data-src="./img/testi/01.webp">
+        <div class="testi__item">
+          <img src="./img/testi/01.webp" alt="">
+        </div>
+      </div>
+      <div class="swiper-slide" data-fancybox="gallery" data-src="./cover.mp4">
+        <div class="testi__item testi__item--video">
+          <img src="./img/testi/02.webp" alt="">
+        </div>
+      </div>
+      <div class="swiper-slide" data-fancybox="gallery" data-src="./img/testi/01.webp">
+        <div class="testi__item">
+          <img src="./img/testi/01.webp" alt="">
+        </div>
+      </div>
+      <div class="swiper-slide" data-fancybox="gallery" data-src="./cover.mp4">
+        <div class="testi__item testi__item--video">
+          <img src="./img/testi/03.webp" alt="">
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+      <section class="ready">
+  <div class="ready__wrapper">
+    <div class="container">
+      <div class="ready__container">
+        <div class="ready__content">
+          <h2 class="ready__title title3">
+            Готов
+            снимать сильно?
+          </h2>
+
+          <p class="ready__subtitle">
+            Выбери свой формат и&nbsp;начни обучение уже&nbsp;сегодня
+          </p>
+
+          <button class="btn-reset btn modal-btn ready__btn" data-target="#modal-cta">Записаться на курс</button>
+        </div>
+
+        <div class="ready__elems">
+          <img src="./img/ready/01.webp" aria-hidden="true" alt="" data-animate="ready-slide" data-delay="0">
+          <img src="./img/ready/02.webp" aria-hidden="true" alt="" data-animate="ready-slide" data-delay="100">
+          <img src="./img/ready/03.webp" aria-hidden="true" alt="" data-animate="ready-slide" data-delay="200">
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
     </main>
-    <footer class="footer">
-  <div class="container"></div>
+    <div class="modal" id="modal-cta">
+  <div class="modal__body">
+
+    <div class="modal__header">
+      <p class="modal__title">
+        Оставьте заявку, я с&nbsp;вами свяжусь
+      </p>
+
+      <button class="btn-reset modal__close">
+        <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M1 1L29 29M29 1L1 29" stroke="#040404" stroke-width="2" />
+        </svg>
+      </button>
+    </div>
+
+    <form action="#" class="modal__form form corner-smooth-40">
+      <div class="form__field form__field--long">
+        <div class="form__field-wrapper">
+          <input id="name" type="text" class="form__input input-name" name="Имя" />
+          <label for="name" class="form__label">как ваше имя?</label>
+        </div>
+      </div>
+      <div class="form__field form__field--long">
+        <select name="тариф" class="visually-hidden select-contact">
+          <option value="">Выберите опцию</option>
+          <option value="Просто посмотреть">Просто посмотреть</option>
+          <option value="С поддержкой">С поддержкой</option>
+          <option value="VIP-формат">VIP-формат
+          </option>
+        </select>
+        <div class="dropdown form__dropdown ">
+          <div class="dropdown__header">
+            <div class="dropdown__label">Выберете тариф</div>
+            <div class="dropdown__capture">Выберете тариф</div>
+            <div class="dropdown__btn">
+              <svg class="">
+                <use xlink:href="img/sprite.svg#arr-down"></use>
+              </svg>
+            </div>
+          </div>
+          <div class="dropdown__body">
+            <div class="dropdown__content">
+              <div class="dropdown__item"></div>
+              <div class="dropdown__item">Просто посмотреть</div>
+              <div class="dropdown__item">С поддержкой</div>
+              <div class="dropdown__item">VIP-формат
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="form__field form__field--long">
+        <div class="form__field-wrapper">
+          <input id="tel" type="tel" class="form__input input-tel" name="Телефон" />
+          <label for="tel" class="form__label">Номер телефона</label>
+        </div>
+      </div>
+      <div class="form__field form__field--long">
+        <div class="form__field-wrapper form__field-wrapper--area">
+          <textarea id="mess" class="form__input form__input--area input-mess" name="Сообщение"></textarea>
+          <label for="mess" class="form__label">введите текст сообщения</label>
+        </div>
+      </div>
+      <button class="btn btn-reset btn--accent form__btn" type="submit">
+        Отправить
+      </button>
+    </form>
+  </div>
+</div>
+
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer__container">
+      <a class="footer__logo">
+        <img src="./img/logo.svg" alt="logo">
+      </a>
+
+      <div class="footer__block">
+        <div>
+          <a href="#" class="footer__link link-btn" data-target="modal-info">
+            Юридическая информация
+          </a>
+        </div>
+        <div>
+          <a href="#" class="footer__link link-btn" data-target="modal-policy">
+            Политика конфиденциальности
+          </a>
+        </div>
+        <div>
+          <a href="#" class="footer__link link-btn" data-target="modal-agreement">
+            Пользовательское соглашение
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
 </footer>
 
   </div>

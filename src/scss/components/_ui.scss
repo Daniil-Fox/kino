@@ -313,6 +313,42 @@ section {
   }
 }
 
+// Анимация fade-in-up
+[data-animate="fade-in-up"] {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+
+  &.animate {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+// Анимация fade-in-left
+[data-animate="fade-in-left"] {
+  opacity: 0;
+  transform: translateX(30px);
+  transition: all 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+
+  &.animate {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+// Анимация fade-in-right
+[data-animate="fade-in-right"] {
+  opacity: 0;
+  transform: translateX(-30px);
+  transition: all 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+
+  &.animate {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
 // Специальная анимация для секции ready
 [data-animate="ready-slide"] {
   opacity: 0;
@@ -320,6 +356,54 @@ section {
 
   &.animate {
     opacity: 1;
+  }
+}
+
+// Анимация scale-in с масштабированием
+[data-animate="scale-in"] {
+  opacity: 0;
+  transform: scale(0.5);
+  transition: all 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+
+  &.animate {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+// Анимация rotate-in с поворотом
+[data-animate="rotate-in"] {
+  opacity: 0;
+  transform: rotate(-10deg) scale(0.8);
+  transition: all 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+
+  &.animate {
+    opacity: 1;
+    transform: rotate(0deg) scale(1);
+  }
+}
+
+// Анимация bounce-in с отскоком
+[data-animate="bounce-in"] {
+  opacity: 0;
+  transform: translateY(50px) scale(0.8);
+  transition: all 0.8s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+
+  &.animate {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+// Анимация slide-in-bottom
+[data-animate="slide-in-bottom"] {
+  opacity: 0;
+  transform: translateY(100px);
+  transition: all 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+
+  &.animate {
+    opacity: 1;
+    transform: translateY(0);
   }
 }
 

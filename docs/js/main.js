@@ -16798,11 +16798,13 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _components_ready_animation_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./components/ready-animation.js */ "./src/js/components/ready-animation.js");
 /* harmony import */ var _components_scroll_animation_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./components/scroll-animation.js */ "./src/js/components/scroll-animation.js");
 /* harmony import */ var _components_modal_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./components/modal.js */ "./src/js/components/modal.js");
-/* harmony import */ var _components_inputs_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./components/inputs.js */ "./src/js/components/inputs.js");
-/* harmony import */ var _components_dropdown_js__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./components/dropdown.js */ "./src/js/components/dropdown.js");
-/* harmony import */ var _components_fancy_js__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./components/fancy.js */ "./src/js/components/fancy.js");
-/* harmony import */ var _functions_validate_forms_js__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./functions/validate-forms.js */ "./src/js/functions/validate-forms.js");
-/* harmony import */ var _components_textarea_js__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./components/textarea.js */ "./src/js/components/textarea.js");
+/* harmony import */ var _components_headings_animation_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./components/headings-animation.js */ "./src/js/components/headings-animation.js");
+/* harmony import */ var _components_inputs_js__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./components/inputs.js */ "./src/js/components/inputs.js");
+/* harmony import */ var _components_dropdown_js__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./components/dropdown.js */ "./src/js/components/dropdown.js");
+/* harmony import */ var _components_fancy_js__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./components/fancy.js */ "./src/js/components/fancy.js");
+/* harmony import */ var _functions_validate_forms_js__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./functions/validate-forms.js */ "./src/js/functions/validate-forms.js");
+/* harmony import */ var _components_textarea_js__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./components/textarea.js */ "./src/js/components/textarea.js");
+
 
 
 
@@ -16818,8 +16820,11 @@ __webpack_require__.r(__webpack_exports__);
 document.addEventListener("DOMContentLoaded", () => {
   const textareas = document.querySelectorAll(".form__input--area");
   textareas.forEach(textarea => {
-    new _components_textarea_js__WEBPACK_IMPORTED_MODULE_9__["default"](textarea);
+    new _components_textarea_js__WEBPACK_IMPORTED_MODULE_10__["default"](textarea);
   });
+
+  // Инициализация анимаций при скролле
+  new ScrollAnimation();
 });
 
 /***/ }),
@@ -16885,6 +16890,46 @@ __webpack_require__.r(__webpack_exports__);
 _fancyapps_ui__WEBPACK_IMPORTED_MODULE_0__.Fancybox.bind('[data-fancybox="gallery"]', {
   // Your custom options for a specific gallery
 });
+
+/***/ }),
+
+/***/ "./src/js/components/headings-animation.js":
+/*!*************************************************!*\
+  !*** ./src/js/components/headings-animation.js ***!
+  \*************************************************/
+/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+// Компонент для анимации заголовков секций
+class HeadingsAnimation {
+  constructor() {
+    this.init();
+  }
+  init() {
+    this.setupHeadingsAnimation();
+  }
+  setupHeadingsAnimation() {
+    // Находим все заголовки секций
+    const sectionHeadings = document.querySelectorAll("h1, h2, h3");
+    sectionHeadings.forEach((heading, index) => {
+      // Добавляем анимацию только если у элемента еще нет data-animate
+      if (!heading.hasAttribute("data-animate")) {
+        heading.setAttribute("data-animate", "fade-in-up");
+        heading.setAttribute("data-delay", (index * 100).toString());
+      }
+    });
+  }
+}
+
+// Инициализация компонента при загрузке DOM
+document.addEventListener("DOMContentLoaded", () => {
+  new HeadingsAnimation();
+});
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (HeadingsAnimation);
 
 /***/ }),
 
@@ -17138,21 +17183,22 @@ class ScrollAnimation {
     });
   }
   animateElement(element) {
+    // Проверяем, была ли уже выполнена анимация
+    if (element.hasAttribute("data-animated")) {
+      return;
+    }
     const animationType = element.getAttribute("data-animate");
     const delay = element.getAttribute("data-delay") || 0;
     setTimeout(() => {
       element.classList.add("animate");
-
-      // Удаляем атрибут data-animate чтобы анимация не повторялась
-      element.removeAttribute("data-animate");
+      // Отмечаем, что анимация уже выполнена
+      element.setAttribute("data-animated", "true");
     }, parseInt(delay));
   }
 }
 
-// Инициализация компонента при загрузке DOM
-document.addEventListener("DOMContentLoaded", () => {
-  new ScrollAnimation();
-});
+// Делаем компонент доступным глобально
+window.ScrollAnimation = ScrollAnimation;
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (ScrollAnimation);
 
 /***/ }),

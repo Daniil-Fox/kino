@@ -52,23 +52,24 @@
     <div class="container">
       <div class="hero__container">
         <div class="hero__content">
-          <h1 class="title1 hero__title">
+          <h1 class="title1 hero__title" data-animate="fade-in-up" data-delay="0">
             <span>Снимать</span>
             <span>вов<span class="accent">Се</span></span>
             <span>не тяж<span class="accent">Ко</span></span>
           </h1>
-          <div class="desc1 hero__desc">
+          <div class="desc1 hero__desc" data-animate="fade-in-up" data-delay="200">
             <p>Киношные кадры, цепляющие истории и&nbsp;свой стиль&nbsp;&mdash;&nbsp;даже&nbsp;если&nbsp;ты&nbsp;никогда
               не&nbsp;держал камеру.</p>
             <p>
               Курс от&nbsp;Паши, снятый как&nbsp;мини-фильм, а&nbsp;не&nbsp;как&nbsp;лекция за&nbsp;столом.
             </p>
           </div>
-          <button class="btn btn-reset modal-btn hero__btn" data-target="#modal-cta">
+          <button class="btn btn-reset modal-btn hero__btn" data-animate="bounce-in" data-delay="400"
+            data-target="#modal-cta">
             Начать обучение
           </button>
         </div>
-        <div class="hero__img">
+        <div class="hero__img" data-animate="scale-in" data-delay="300">
           <picture>
             <source srcset="./img/hero-mob.webp" media="(max-width: 576px)" type="image/webp">
             <img src="./img/hero.webp" alt="Снимать вовсе не тяжко">
@@ -83,11 +84,11 @@
       <section class="suit">
   <div class="container">
     <div class="suit__container">
-      <div class="suit__content">
-        <h2 class="title2 suit__title">
+      <div class="suit__content" data-animate="fade-in-up" data-delay="0">
+        <h2 class="title2 suit__title" data-animate="fade-in-up" data-delay="100">
           Подходит и&nbsp;новичкам, и&nbsp;тем, кто&nbsp;уже снимает
         </h2>
-        <div class="suit__desc desc2">
+        <div class="suit__desc desc2" data-animate="fade-in-up" data-delay="200">
           <p>
             Если&nbsp;ты&nbsp;только начинаешь и&nbsp;не&nbsp;знаешь, с&nbsp;чего&nbsp;начать&nbsp;— этот&nbsp;курс
             для&nbsp;тебя.<br>
@@ -101,7 +102,7 @@
         </div>
       </div>
 
-      <div class="suit__img">
+      <div class="suit__img" data-animate="rotate-in" data-delay="300">
         <img src="./img/suit.webp" alt="Подходит и новичкам, и тем, кто уже снимает">
       </div>
     </div>
@@ -110,13 +111,14 @@
 
       <section class="get">
   <div class="container">
-    <h2 class="title3 get__title centered">Что&nbsp;ты&nbsp;получишь на&nbsp;курсе
+    <h2 class="title3 get__title centered" data-animate="fade-in-up" data-delay="0">Что&nbsp;ты&nbsp;получишь
+      на&nbsp;курсе
     </h2>
   </div>
-  <div class="get__slider swiper">
+  <div class="get__slider swiper" data-animate="fade-in-up" data-delay="200">
     <div class="swiper-wrapper">
       <div class="swiper-slide">
-        <div class="get__item get-item">
+        <div class="get__item get-item" data-animate="fade-in-up" data-delay="100">
           <p class="get-item__title">
             Где&nbsp;брать идеи и&nbsp;как&nbsp;набирать просмотры
           </p>
@@ -129,7 +131,7 @@
         </div>
       </div>
       <div class="swiper-slide">
-        <div class="get__item get-item">
+        <div class="get__item get-item" data-animate="fade-in-up" data-delay="200">
           <p class="get-item__title">
             Уверенное понимание, как&nbsp;пользоваться камерой
 
@@ -143,7 +145,7 @@
         </div>
       </div>
       <div class="swiper-slide">
-        <div class="get__item get-item">
+        <div class="get__item get-item" data-animate="fade-in-up" data-delay="300">
           <p class="get-item__title">
             Как&nbsp;удерживать внимание зрителя
 
@@ -157,7 +159,7 @@
         </div>
       </div>
       <div class="swiper-slide">
-        <div class="get__item get-item">
+        <div class="get__item get-item" data-animate="fade-in-up" data-delay="400">
           <p class="get-item__title">
             Как&nbsp;выстраивать выразительные, красивые кадры
           </p>
@@ -170,7 +172,7 @@
         </div>
       </div>
       <div class="swiper-slide">
-        <div class="get__item get-item">
+        <div class="get__item get-item" data-animate="fade-in-up" data-delay="500">
           <p class="get-item__title">
             Как&nbsp;писать сценарии для&nbsp;коротких
             видео
@@ -190,7 +192,7 @@
       <section class="program">
   <div class="container">
     <div class="program__container">
-      <div class="program__content">
+      <div class="program__content" data-animate="fade-in-right" data-delay="0">
         <h2 class="title3 program__title">
           Программа курса
           <span><span class="accent">40+</span> уроков</span>
@@ -210,7 +212,7 @@
         </p>
       </div>
 
-      <div class="program__video video-wrapper">
+      <div class="program__video video-wrapper" data-animate="fade-in-left" data-delay="200">
         <button class="btn-reset video-play">
           <svg class="video-btn__icon">
             <use xlink:href="img/sprite.svg#play"></use>
@@ -225,20 +227,24 @@
       <section class="how">
   <div class="container">
     <div class="how__container">
-      <div class="how__img">
+      <div class="how__img" data-animate="fade-in-left" data-delay="0">
         <img src="./img/how.webp" aria-hidden="true" alt="">
       </div>
-      <div class="how__content">
-        <h2 class="how__title title3">
+      <div class="how__content" data-animate="fade-in-right" data-delay="200">
+        <h2 class="how__title title3" data-animate="fade-in-up" data-delay="100">
           <span>Как</span>
           проходит обучение
         </h2>
-        <ul class="list-reset list how__list">
-          <li><i><img src="./img/icons/camera.webp" alt=""></i> Видеоуроки в&nbsp;стиле мини-фильмов</li>
-          <li><i><img src="./img/icons/calendar.webp" alt=""></i> Еженедельные эфиры с&nbsp;разбором и&nbsp;ответами
+        <ul class="list-reset list how__list" data-animate="fade-in-up" data-delay="300">
+          <li data-animate="fade-in-up" data-delay="400"><i><img src="./img/icons/camera.webp" alt=""></i> Видеоуроки
+            в&nbsp;стиле мини-фильмов</li>
+          <li data-animate="fade-in-up" data-delay="500"><i><img src="./img/icons/calendar.webp" alt=""></i>
+            Еженедельные эфиры с&nbsp;разбором и&nbsp;ответами
           </li>
-          <li><i><img src="./img/icons/micro.webp" alt=""></i> Приглашённые гости</li>
-          <li><i><img src="./img/icons/chat.webp" alt=""></i> Чат&nbsp;для&nbsp;общения и&nbsp;обратной связи</li>
+          <li data-animate="fade-in-up" data-delay="600"><i><img src="./img/icons/micro.webp" alt=""></i> Приглашённые
+            гости</li>
+          <li data-animate="fade-in-up" data-delay="700"><i><img src="./img/icons/chat.webp" alt=""></i>
+            Чат&nbsp;для&nbsp;общения и&nbsp;обратной связи</li>
         </ul>
       </div>
     </div>
@@ -247,12 +253,12 @@
 
       <section class="format">
   <div class="container">
-    <h2 class="title3 format__title">Выбери свой&nbsp;формат
+    <h2 class="title3 format__title" data-animate="fade-in-up" data-delay="0">Выбери свой&nbsp;формат
     </h2>
   </div>
-  <div class="format__slider">
+  <div class="format__slider" data-animate="fade-in-up" data-delay="200">
     <div class="format__viewport">
-      <div class="format__item f-item f-item--light">
+      <div class="format__item f-item f-item--light" data-animate="fade-in-up" data-delay="300">
         <div class="f-item__content">
           <p class="f-item__title">Просто посмотреть
           </p>
@@ -278,7 +284,7 @@
           </picture>
         </div>
       </div>
-      <div class="format__item f-item f-item--green">
+      <div class="format__item f-item f-item--green" data-animate="fade-in-up" data-delay="400">
         <div class="f-item__content">
           <p class="f-item__title">С поддержкой
 
@@ -305,7 +311,7 @@
           </picture>
         </div>
       </div>
-      <div class="format__item f-item f-item--yellow">
+      <div class="format__item f-item f-item--yellow" data-animate="fade-in-up" data-delay="500">
         <div class="f-item__content">
           <p class="f-item__title">VIP-формат
           </p>
@@ -338,11 +344,11 @@
       <section class="hi">
   <div class="container">
     <div class="hi__container">
-      <div class="hi__content">
-        <h3 class="title3 title3--accent hi__title">
+      <div class="hi__content" data-animate="fade-in-right" data-delay="0">
+        <h3 class="title3 title3--accent hi__title" data-animate="fade-in-up" data-delay="100">
           Привет, я&nbsp;Паша
         </h3>
-        <div class="desc2 hi__desc">
+        <div class="desc2 hi__desc" data-animate="fade-in-up" data-delay="200">
           <p>Я&nbsp;снимаю короткие ролики, которые выглядят как&nbsp;сцены из&nbsp;кино. Без&nbsp;команды,
             без&nbsp;студии&nbsp;—
             просто с&nbsp;идеей, стилем и&nbsp;опытом.</p>
@@ -354,7 +360,7 @@
         </div>
       </div>
 
-      <div class="hi__img video-wrapper">
+      <div class="hi__img video-wrapper" data-animate="slide-in-bottom" data-delay="300">
         <video src="" poster="./img/hi.webp"></video>
       </div>
     </div>
@@ -363,48 +369,48 @@
 
       <section class="testi">
   <div class="container">
-    <h2 class="title3 testi__title">Отзывы</h2>
+    <h2 class="title3 testi__title" data-animate="fade-in-up" data-delay="0">Отзывы</h2>
   </div>
 
-  <div class="testi__slider swiper">
+  <div class="testi__slider swiper" data-animate="fade-in-up" data-delay="200">
     <div class="swiper-wrapper">
       <div class="swiper-slide" data-fancybox="gallery" data-src="./img/testi/01.webp">
-        <div class="testi__item">
+        <div class="testi__item" data-animate="fade-in-up" data-delay="300">
           <img src="./img/testi/01.webp" alt="">
         </div>
       </div>
       <div class="swiper-slide" data-fancybox="gallery" data-src="./cover.mp4">
-        <div class="testi__item testi__item--video">
+        <div class="testi__item testi__item--video" data-animate="fade-in-up" data-delay="400">
           <img src="./img/testi/02.webp" alt="">
         </div>
       </div>
       <div class="swiper-slide" data-fancybox="gallery" data-src="./img/testi/01.webp">
-        <div class="testi__item">
+        <div class="testi__item" data-animate="fade-in-up" data-delay="500">
           <img src="./img/testi/01.webp" alt="">
         </div>
       </div>
       <div class="swiper-slide" data-fancybox="gallery" data-src="./cover.mp4">
-        <div class="testi__item testi__item--video">
+        <div class="testi__item testi__item--video" data-animate="fade-in-up" data-delay="600">
           <img src="./img/testi/03.webp" alt="">
         </div>
       </div>
       <div class="swiper-slide" data-fancybox="gallery" data-src="./img/testi/01.webp">
-        <div class="testi__item">
+        <div class="testi__item" data-animate="fade-in-up" data-delay="700">
           <img src="./img/testi/01.webp" alt="">
         </div>
       </div>
       <div class="swiper-slide" data-fancybox="gallery" data-src="./cover.mp4">
-        <div class="testi__item testi__item--video">
+        <div class="testi__item testi__item--video" data-animate="fade-in-up" data-delay="800">
           <img src="./img/testi/02.webp" alt="">
         </div>
       </div>
       <div class="swiper-slide" data-fancybox="gallery" data-src="./img/testi/01.webp">
-        <div class="testi__item">
+        <div class="testi__item" data-animate="fade-in-up" data-delay="900">
           <img src="./img/testi/01.webp" alt="">
         </div>
       </div>
       <div class="swiper-slide" data-fancybox="gallery" data-src="./cover.mp4">
-        <div class="testi__item testi__item--video">
+        <div class="testi__item testi__item--video" data-animate="fade-in-up" data-delay="1000">
           <img src="./img/testi/03.webp" alt="">
         </div>
       </div>
@@ -416,7 +422,7 @@
   <div class="ready__wrapper">
     <div class="container">
       <div class="ready__container">
-        <div class="ready__content">
+        <div class="ready__content" data-animate="fade-in-up" data-delay="0">
           <h2 class="ready__title title3">
             Готов
             снимать сильно?
@@ -514,22 +520,22 @@
 <footer class="footer">
   <div class="container">
     <div class="footer__container">
-      <a class="footer__logo">
+      <a class="footer__logo" data-animate="fade-in-up" data-delay="0">
         <img src="./img/logo.svg" alt="logo">
       </a>
 
-      <div class="footer__block">
-        <div>
+      <div class="footer__block" data-animate="fade-in-up" data-delay="200">
+        <div data-animate="fade-in-up" data-delay="300">
           <a href="#" class="footer__link link-btn" data-target="modal-info">
             Юридическая информация
           </a>
         </div>
-        <div>
+        <div data-animate="fade-in-up" data-delay="400">
           <a href="#" class="footer__link link-btn" data-target="modal-policy">
             Политика конфиденциальности
           </a>
         </div>
-        <div>
+        <div data-animate="fade-in-up" data-delay="500">
           <a href="#" class="footer__link link-btn" data-target="modal-agreement">
             Пользовательское соглашение
           </a>

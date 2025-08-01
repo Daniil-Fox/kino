@@ -3,6 +3,7 @@ import "./components/video.js";
 import "./components/ready-animation.js";
 import "./components/scroll-animation.js";
 import "./components/modal.js";
+import "./components/headings-animation.js";
 import "./components/inputs.js";
 import "./components/dropdown.js";
 import "./components/fancy.js";
@@ -15,4 +16,7 @@ document.addEventListener("DOMContentLoaded", () => {
   textareas.forEach((textarea) => {
     new CustomTextarea(textarea);
   });
+
+  // Инициализация анимаций при скролле
+  new ScrollAnimation();
 });

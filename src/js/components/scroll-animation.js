@@ -34,21 +34,23 @@ class ScrollAnimation {
   }
 
   animateElement(element) {
+    // Проверяем, была ли уже выполнена анимация
+    if (element.hasAttribute("data-animated")) {
+      return;
+    }
+
     const animationType = element.getAttribute("data-animate");
     const delay = element.getAttribute("data-delay") || 0;
 
     setTimeout(() => {
       element.classList.add("animate");
-
-      // Удаляем атрибут data-animate чтобы анимация не повторялась
-      element.removeAttribute("data-animate");
+      // Отмечаем, что анимация уже выполнена
+      element.setAttribute("data-animated", "true");
     }, parseInt(delay));
   }
 }
 
-// Инициализация компонента при загрузке DOM
-document.addEventListener("DOMContentLoaded", () => {
-  new ScrollAnimation();
-});
+// Делаем компонент доступным глобально
+window.ScrollAnimation = ScrollAnimation;
 
 export default ScrollAnimation;
